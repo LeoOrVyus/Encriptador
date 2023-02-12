@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body> 
+    <header>
+        <a href="https://app.aluracursos.com/user/leocodeenes" target="_blank">
+            <img class="logo" src="Imageneschallenge/Logo.png" alt="Logo Encriptador" alt="Alura logo">
+        </a>
+        <a href="https://www.linkedin.com/in/leonardo-mtz-torres-cee/" target="_blank" alt="Linkedin logo">
+            <img src="Imageneschallenge/174857.png" alt="" class="links">
+        </a>
+        <a href="https://github.com/LeoOrVyus" target="_self">
+            <img src="Imageneschallenge/37819.png" alt="" class="links" alt="Github logo">
+        </a>
+        <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+    <main>
+        <section>
+            <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese su texto:"></textarea>
+            <div class="aviso"><h3> &#10071; IMPORTANTE: Solo utilizar letras minusculas y sin acentos!</h3>
+            </div>
+
+            <div class="botones">
+                <button class="Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="Desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+            
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+<footer>
+    <h2 class="pie">Leonardo Martínez Torres            Primer Reto             Programa:  ONE</h2>
+</footer>
+
+</body>
+</html>

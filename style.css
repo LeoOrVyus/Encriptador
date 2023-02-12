@@ -1,0 +1,300 @@
+*{
+   font-family: 'Inter';
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 150%;
+}
+
+body{
+   background-image: linear-gradient(135deg,
+   grey, rgb(95, 95, 95), rgb(87, 87, 87), rgb(72, 72, 72),
+   rgb(62, 62, 62), rgb(53, 53, 53), rgb(40, 40, 40));
+   background-size: 500%;
+   animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado{
+   0%{
+      background-position: 0% 50%;
+   }
+   50%{
+      background-position: 100% 50%;
+   }
+   100%{
+      background-position: 0% 50%;
+   }
+}
+
+.logo{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    width: 10%;
+ }
+
+.links{
+   width: 5%;
+   padding-top: 20px;
+   padding-right: 20px;
+   float: right;
+}
+
+.titulo{
+   font-weight: 600;
+   font-size: 60px;
+   line-height: 100%;
+   text-align: center;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+ }
+
+.textarea{
+   border: none;
+   background: rgba(10, 10, 10, .001);
+   margin-top: 20px;
+   text-transform: lowercase;
+}
+
+::placeholder{ color: #010306;}
+   .textarea:focus{
+      outline: none;
+   }
+
+.mensaje{
+   position:absolute;
+   background: rgba(10, 10, 10, .001);
+   background-image: url("Imageneschallenge/Muñeco.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: auto;
+   border: none;
+   border-radius: 24px;
+   color: black;
+   margin-left: 90px;
+   margin-top: 20px;
+   padding-left: 20px;
+}
+.mensaje:focus{
+   outline: none;
+}
+
+.botones{
+   display: flex;
+   position:relative;
+   margin-top: 18px;
+}
+
+.Encriptar{
+   background-color: rgb(32, 29, 29);
+   border: none;
+   border-radius: 24px;
+   color: white;
+   cursor: pointer;
+   height: 67px;
+   margin-left: 40px;
+   margin-right: 20px;
+   width: 328px;
+   position: relative;
+   transition: 1s;
+}
+
+.Encriptar:hover{
+   transform: scale(1.10)
+}
+
+.Encriptar:before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   top: -2px;
+   left:-2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing 20s linear infinite;
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+   border-radius: 10px;
+}
+
+.Encriptar:active {
+   color: rgb(32, 29, 29);
+}
+
+.Encriptar:active:after {
+   background: transparent;
+}
+
+.Encriptar:hover:before {
+   opacity: 1;
+}
+
+.Encriptar:after {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgb(32, 29, 29);
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+}
+
+@keyframes glowing {
+   0% { background-position: 0 0; }
+   50% { background-position: 400% 0; }
+   100% { background-position: 0 0; }
+}
+
+.Desencriptar{
+   background-color: rgb(32, 29, 29);
+   border: none;
+   border-radius: 24px;
+   color: white;
+   cursor: pointer;
+   height: 67px;
+   margin-left: 50px;
+   width: 328px;
+   position: relative;
+   transition: 1s;
+}
+
+.Desencriptar:hover{
+   transform: scale(1.10);
+}
+
+.Desencriptar:before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   top: -2px;
+   left:-2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing 20s linear infinite;
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+   border-radius: 10px;
+}
+
+.Desencriptar:active {
+   color: rgb(32, 29, 29);
+}
+
+.Desencriptar:active:after {
+   background: transparent;
+}
+
+.Desencriptar:hover:before {
+   opacity: 1;
+}
+
+.Desencriptar:after {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgb(32, 29, 29);
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+}
+
+@keyframes glowing {
+   0% { background-position: 0 0; }
+   50% { background-position: 400% 0; }
+   100% { background-position: 0 0; }
+}
+
+.copiar{
+   background-color: rgb(32, 29, 29);
+   border: 1px;
+   border-radius: 24px;
+   color: white;
+   cursor: pointer;
+   height: 67px;
+   margin-left: 110px;
+   margin-top: 580px;
+   width: 328px;
+   position: absolute;
+   transition: 1s;
+}
+
+.copiar:hover{
+   transform: scale(1.10);
+}
+
+.copiar:before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   top: -2px;
+   left:-2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing 20s linear infinite;
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+   border-radius: 10px;
+}
+
+.copiar:active {
+   color: rgb(32, 29, 29);
+}
+
+.copiar:active:after {
+   background: transparent;
+}
+
+.copiar:hover:before {
+   opacity: 1;
+}
+
+.copiar:after {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgb(32, 29, 29);
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+}
+
+@keyframes glowing {
+   0% { background-position: 0 0; }
+   50% { background-position: 400% 0; }
+   100% { background-position: 0 0; }
+}
+
+.aviso{
+   color: darkgray;
+   font-size: 20px;
+   }
+
+.pie{
+   padding-top: -30px;
+   padding-bottom: 25px;
+   color: white;
+}
+
+@media screen and (max-width:480px) {
+   .logo, main, .textarea, .mensaje, .botones, .copiar, .aviso{
+       width: auto;
+   }
+}
